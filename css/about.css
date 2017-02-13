@@ -316,11 +316,18 @@ ul,ol,li,a,a:hover,a:focus,a:active,div{
 }
 .wr-content>ul>li{
 	display: table-cell;
-	width: 32%;
-	padding: 2%;
+	width: 25%;
+	padding: 1%;
+	box-sizing:border-box;
 }
 .wr-img{
+	width: 100%;	
+}
+.w-link{
+	display: block;
 	width: 100%;
+	height: 100%;
+	box-shadow: 2px 2px 1px #ddd;
 }
 .wr-img>img{
 	width: 100%;
