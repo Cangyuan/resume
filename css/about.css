@@ -194,7 +194,7 @@ ul,ol,li,a,a:hover,a:focus,a:active,div{
 	width: 10%;
 	height: 2px;
 	background: #871a04;
-	margin: 0 auto;
+	margin: 14px auto;
 }
 .se-title>h4{
 	text-transform: uppercase;
@@ -278,6 +278,11 @@ ul,ol,li,a,a:hover,a:focus,a:active,div{
 	letter-spacing: 2px;
 	font-size: 16px;
 }
+/*foot start*/
+#foot{
+	padding: 0 20px;
+	margin-bottom: 30px;
+}
 .wr-content{
 	position: relative;
 	z-index: 99;
@@ -285,6 +290,10 @@ ul,ol,li,a,a:hover,a:focus,a:active,div{
 	padding-bottom: 50px
 	width: 90%;
 	margin: 0 auto;
+}
+.event_wrap{
+	/*transform: rotate(-90deg);*/
+	/*transform: ;*/
 }
 .wr-title{
 	position: relative;
@@ -362,6 +371,9 @@ footer{
 	padding: 20px 0;
 	text-align: center;
 	letter-spacing: 1px;
+}
+.wrap-bottom p{
+	padding: 15px 0;
 }
 @keyframes bg{
 	0% {

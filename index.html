@@ -3,8 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="img/shortcut icon" type="text/css" href="bitbug_favicon.ico">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
 	<link rel="stylesheet" href="css/about.css">
+	<link rel="stylesheet" href="css/home.css">
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/jquery.eventFlow.js"></script>
 	<title>about</title>
 </head>
 <body>
@@ -132,6 +135,12 @@
 			  <span class="border"></span>
 			  <h4>my Resume</h4>
 			</div>
+			<div class="foot-content">
+				<div class="event_wrap clearfix">
+				<div class="middle_line">					
+				</div>		
+			</div>
+			</div>
 		</section>
 		<section id="writing">
 		  <div class="se-title wr-title">
@@ -201,10 +210,44 @@
 		  </div>
 		</section>
 		<footer>
-		  <div>
-		    <div>copyright © by orca</div>
+		  <div class="wrap-bottom">
+		    <p>copyright © by orca</p>
 		  </div>
 		</footer>
 	</div>
+	<script>
+		$(function(){
+			var bigEvent =[{
+			'year' : 2015,
+			'events' :[
+			{
+				'mouths' : 2,
+				'times' :'2015年2月~2016年3月',
+				'title':'佛山市亿动网络有限公司',
+				'even' :'产品部工作，负责网站测试以及建站工作，配合后端维护，指导客户建站的顺利进行，做前端页面的开发工作'
+			}]
+		},{
+			'year' : 2016,
+			'events' :[
+			{
+				'mouths' : 3,
+				'title':'广东辰宜信息科技有限公司',
+				'times' :'2016年3月至今',
+				'even' :'web前端开发工程师，负责网站的设计和开发工作'
+			}]
+		},{
+			'year' : 2017,
+			'events' :[
+			{
+				'mouths' : 3,
+				'title':'广东辰宜信息科技有限公司',
+				'times' :'2016年3月至今',
+				'even' :'web前端开发工程师，负责网站的设计和开发工作'
+			}
+			]}];
+			$('.event_wrap').eventFlow({'events':bigEvent});
+		})
+
+	</script>
 </body>
 </html>
