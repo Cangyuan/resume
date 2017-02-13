@@ -212,6 +212,12 @@ ul,ol,li,a,a:hover,a:focus,a:active,div{
 	color: #424242;
 	padding: 6px 0;
 }
+.ab-content>p>span{
+	padding: 2px 4px 0 4px;
+	color: #1e1e34;
+	font-weight: 400;
+	font-size: 20px;
+}
 .ab-content>p:nth-of-type(1){
 	font-size: 18px;
 }
