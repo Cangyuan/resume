@@ -16,9 +16,9 @@
 			<span class="close">&times</span>
 			<img src="images/me-open.jpg" alt="">
 			<h3>orca</h3>
-			<p>目前从事界面设计、交互设计、用户体验、前端开发及网页重构等相关工作</p>
-			<p><a href="#">个人详情</a></p>
-			<p><a href="files/resume.pdf" class="download">简历pdf</a></p>
+			<p class="me-txt">目前从事界面设计、交互设计、用户体验、前端开发及网页重构等相关工作</p>
+			<p class="detail de-close"><a href="#about">个人详情...</a></p>
+			<p class="detail"><a href="files/resume.pdf" class="download">简历pdf</a></p>
 		</div>
 	</div>
 	<div class="wrap">
@@ -293,6 +293,10 @@
 				$('.main-bg').css('display', 'none');
 			}
 			$('.close').click(function(event) {
+				/* Act on the event */
+				close();
+			});
+			$('.de-close').click(function(event) {
 				/* Act on the event */
 				close();
 			});

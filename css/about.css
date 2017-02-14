@@ -60,6 +60,30 @@ ul,ol,li,a,a:hover,a:focus,a:active,div{
 	border-radius: 50%;
 	box-shadow: 0 0 15px #f9e249;
 }
+.me-info>.me>h3{
+	font-size: 18px;
+	text-align: center;
+	padding: 10px 0;
+	margin-bottom: 10px;
+}
+.me-txt{
+	text-indent: 28px;
+	line-height: 1.6;
+	padding: 0 10px;
+	margin-bottom: 30px;
+}
+.detail{
+	padding-left: 10px;
+	text-align: left;
+	text-indent: 0!important;
+	line-height: 1.6;
+	text-shadow: 2px 2px 2px #f6b6ab;
+	letter-spacing: 1px;
+	font-size: 16px;
+}
+.detail>a{
+	color: #d4d4d4;
+}
 .close{
 	position: absolute;
 	top: 10px;
