@@ -4,12 +4,37 @@ body,html{
 	font-size: 14px;
 	background: #f1f1f1;
 	font-family: '微软雅黑';
+	overflow-x: hidden;
 }
 ul,ol,li,a,a:hover,a:focus,a:active,div{
 	list-style: none;
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
+}
+.wrap{
+	position: relative;
+	width: 100%;
+	/*float: right;*/
+	left: 266px;
+}
+/*me-info start*/
+.me-info{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 266px;
+	height: 100%;
+	background: red;
+	padding: 10px;
+	box-sizing:border-box;
+}
+.close{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: #fff;
+	font-size: 20px;
 }
 /*navbar start*/
 #header-wrap{
@@ -294,6 +319,9 @@ ul,ol,li,a,a:hover,a:focus,a:active,div{
 	padding: 0 20px;
 	margin-bottom: 30px;
 }
+.event_wrap{
+	overflow: hidden;
+}
 .wr-content{
 	position: relative;
 	z-index: 99;
@@ -393,6 +421,10 @@ footer{
 .wrap-bottom p{
 	padding: 15px 0;
 }
+
+
+
+
 @keyframes bg{
 	0% {
 	    -moz-transform: translate3d(0,0,0);

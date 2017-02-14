@@ -11,6 +11,11 @@
 	<title>逆戟·个人网站</title>
 </head>
 <body>
+	<div class="me-info">
+		<div class="me">
+			<span class="close">&times</span>
+		</div>
+	</div>
 	<div class="wrap">
 		<header id="header-wrap">
 		  <ul>
@@ -260,6 +265,13 @@
 			}
 			]}];
 			$('.event_wrap').eventFlow({'events':bigEvent});
+
+			// colse start
+			$('.close').click(function(event) {
+				/* Act on the event */
+				$('.me-info').css('display', 'none');
+				$('.wrap').removeClass('wrap');
+			});
 		})
 
 	</script>
