@@ -14,7 +14,12 @@
 	<div class="me-info">
 		<div class="me">
 			<span class="close">&times</span>
-			<img src="images/me-open.jpg" alt="">
+			<div class="me-pic">
+				<div class="me-wrap">
+					<img src="images/me-open.jpg" alt="">
+				</div>
+				
+			</div>		
 			<h3>orca</h3>
 			<p class="me-txt">目前从事界面设计、交互设计、用户体验、前端开发及网页重构等相关工作</p>
 			<p class="detail de-close"><a href="#about">个人详情...</a></p>
@@ -315,23 +320,20 @@
 				$("html,body").animate({scrollTop: $(Id).offset().top}, 1000);
 			});	
 			//滚动加载css3动画	
-			function cssOnload(div,cssname,offset){
-			    var a,b,c,d;
-			    d=$(div).offset().top;
-			    a=eval(d + offset);
+			$(window).scroll(function(){
+			    var a,b,c,con,foot;
+			    con=$('.co-content').offset().top;
+			    foot=$('#foot').offset().top;
+			    a=eval(con + 100);
 			    b=$(window).scrollTop(); 
 			    c=$(window).height();
 			    if(b+c>a){
-			        $((div)).addClass((cssname));
+			        $('.co-content>ul>li').addClass('scroll');
 			        }
-			    }
-			$(window).scroll(function(){
-			    cssOnload(".co-content>ul>li",'scroll',500);
-			    })
-			// $(document).ready(function(e) {
-			// $(window).scroll(function(){
-			//     cssOnload(".co-content>ul>li",'scroll',500);
-			//     }	 
+			    if (b+c>foot + 50) {
+			    	$('.ev_text_event').addClass('aActiveWid');
+			        }
+			    })	 
 		});
 			
 

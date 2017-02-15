@@ -1,4 +1,4 @@
-;(function($,window,document,undefined){
+(function($,window,document,undefined){
 	var pluginName = 'eventFlow',
 		defaults ={};
 	function EventFlow(element,options){
@@ -13,13 +13,23 @@
   				point.push($(this).offset().top)  	
   			});
   			$(window).scroll(function(event) {
-  				var s = $(this).scrollTop();  
-  				for(var i =0;i<point.length;i++){  		
-  					if(s+ $(document).height()*2/3 > point[i] ){
-  						$($text[i]).addClass('aActiveWid');  			
-  					}else{
-  						$($text[i]).removeClass('aActiveWid')
-  					}
+  				var s = $(this).scrollTop();
+  				var foot=$('#foot').offset().top;
+			    var a=eval(foot + 200);
+			    var b=$(window).scrollTop(); 
+			    var c=$(window).height();
+  				  
+  				for(var i =0;i<point.length;i++){  
+  					if(b+c>a){
+			        	$($text[i]).addClass('aActiveWid');
+			        }/*else{
+			        	$($text[i]).removeClass('aActiveWid')
+			        }	*/	
+  					// if(s+ $(document).height()*2/3 > point[i] ){
+  					// 	$($text[i]).addClass('aActiveWid');  			
+  					// }else{
+  					// 	$($text[i]).removeClass('aActiveWid')
+  					// }
   				}
   			});
 		},
