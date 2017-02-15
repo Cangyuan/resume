@@ -202,7 +202,7 @@
 			    </ul>
 			  </div>
 			</section>
-			<section id="contact">
+			<section id="contact" data-animation="flipInX" data-timeout="400">
 			  <div class="se-title">
 			    <h2>联系我</h2>
 			    <span class="border"></span>
@@ -247,6 +247,8 @@
 	</div>
 	<script>
 		$(function(){
+			var id="about";
+
 			var bigEvent =[{
 			'year' : 2015,
 			'events' :[
@@ -279,7 +281,6 @@
 			// open start
 			$('.head-me').click(function(event) {
 				/* Act on the event */
-
 				$('.me-info').addClass('open-me');
 				$('.wrap').addClass('remove');
 				$('.main-bg').css('display', 'block');
@@ -300,13 +301,39 @@
 				/* Act on the event */
 				close();
 			});
+			$('.nav-wrap>nav>ul>li').first().find('a').addClass('navActive');
 			$('.nav-wrap>nav>ul>li').click(function(event) {
 				/* Act on the event */
 				$('.nav-wrap>nav>ul>li>a').removeClass('navActive');
 				$(this).find('a').addClass('navActive');
 				close();
 			});
-		})
+			// 锚点跳转
+			$('.nav-wrap>nav>ul>li>a').click(function(event) {
+				/* Act on the event */
+				var Id = $(this).attr('href');
+				$("html,body").animate({scrollTop: $(Id).offset().top}, 1000);
+			});	
+			//滚动加载css3动画	
+			function cssOnload(div,cssname,offset){
+			    var a,b,c,d;
+			    d=$(div).offset().top;
+			    a=eval(d + offset);
+			    b=$(window).scrollTop(); 
+			    c=$(window).height();
+			    if(b+c>a){
+			        $((div)).addClass((cssname));
+			        }
+			    }
+			$(window).scroll(function(){
+			    cssOnload(".co-content>ul>li",'scroll',500);
+			    })
+			// $(document).ready(function(e) {
+			// $(window).scroll(function(){
+			//     cssOnload(".co-content>ul>li",'scroll',500);
+			//     }	 
+		});
+			
 
 	</script>
 </body>

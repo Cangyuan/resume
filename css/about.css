@@ -12,6 +12,16 @@ ul,ol,li,a,a:hover,a:focus,a:active,div{
 	padding: 0;
 	text-decoration: none;
 }
+#skill,#foot,#writing,#contact{
+	padding: 40px 0;
+	position: relative;
+	/*top: 0;
+	-webkit-transition: all 2 ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all 2 ease;
+	transition: all 2 ease;*/
+}
 .wrap{
 	position: relative;
 	left: 0;
@@ -277,6 +287,13 @@ ul,ol,li,a,a:hover,a:focus,a:active,div{
 #about{
 	padding: 30px 0;
 	margin-bottom: 30px;
+	position: relative;
+	top: 0;
+	-webkit-transition: all 2 ease;
+	-moz-transition: all 2 ease;
+	-ms-transition: all 2 ease;
+	-o-transition: all 2 ease;
+	transition: all 2 ease;
 }
 .info-wrap{
 	height: 248px;
@@ -361,7 +378,6 @@ ul,ol,li,a,a:hover,a:focus,a:active,div{
 }
 #skill{
 	position: relative;
-	padding: 40px 0;
 	background: url(../images/skill-bg.jpg);
 	background-attachment: fixed;
 	background-size: cover;
@@ -416,10 +432,6 @@ ul,ol,li,a,a:hover,a:focus,a:active,div{
 	font-size: 16px;
 }
 /*foot start*/
-#foot{
-	padding: 0 20px;
-	margin-bottom: 30px;
-}
 .event_wrap{
 	overflow: hidden;
 }
@@ -498,6 +510,9 @@ ul,ol,li,a,a:hover,a:focus,a:active,div{
 	text-align: center;
 	width: 25%;
 
+	
+}
+.scroll{
 	-webkit-animation-name: entrance;
 	-moz-animation-name: entrance;
 	-o-animation-name: entrance;
