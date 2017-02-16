@@ -172,7 +172,7 @@
 			  </div>
 			  <div class="wr-content">
 			    <ul>
-			      <li class="fade">
+			      <li>
 			        <a class="w-link" href="http://www.gdchenyi.com.cn" target="_blank">
 			          <div class="wr-img">
 			            <img src="images/cy.jpg" alt="辰宜">
@@ -268,8 +268,6 @@
 	</div>
 	<script>
 		$(function(){
-			var id="about";
-
 			var bigEvent =[{
 			'year' : 2015,
 			'events' :[
@@ -347,8 +345,8 @@
 			    if(b+c>a){
 			        $('.co-content>ul>li').addClass('scroll');
 			        }
-			    if(b+c>wr + 200){
-			        $('.wr-content>ul>li').addClass('fade');
+			    if(b+c>wr + 400){
+			         $('.wr-content>ul>li').addClass('fade');
 			        }
 			    }) 
 		});

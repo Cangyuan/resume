@@ -483,24 +483,31 @@ ul,ol,li,a,a:hover,a:focus,a:active,div{
 	padding: 1%;
 	box-sizing:border-box;
 	position: relative;
-	left: 10px;
-	top: 20px;
+	left: 20px;
+	top: 40px;
 	opacity: 0;
-	-webkit-transition: all 0.4s ease-in;
-    -moz-transition: all 0.4s ease-in;
-    -ms-transition: all 0.4s ease-in;
-    -o-transition: all 0.4s ease-in;
-    transition: all 0.4s ease-in;
+	-webkit-transition: all 1s ease-in;
+    -moz-transition: all 1s ease-in;
+    -ms-transition: all 1s ease-in;
+    -o-transition: all 1s ease-in;
+    transition: all 1s ease-in;
 }
 .wr-content>ul>li.fade{
 	top: 0;
 	left: 0;
 	opacity: 1;
-	-webkit-transition: all 0.4s ease-in;
-    -moz-transition: all 0.4s ease-in;
-    -ms-transition: all 0.4s ease-in;
-    -o-transition: all 0.4s ease-in;
-    transition: all 0.4s ease-in;
+	-webkit-transition: all 1s ease-in;
+    -moz-transition: all 1s ease-in;
+    -ms-transition: all 1s ease-in;
+    -o-transition: all 1s ease-in;
+    transition: all 1s ease-in;
+}
+.wr-content>ul>li:nth-of-type(even){
+	-webkit-transition: all 1.5s ease-in;
+    -moz-transition: all 1.5s ease-in;
+    -ms-transition: all 1.5s ease-in;
+    -o-transition: all 1.5s ease-in;
+    transition: all 1.5s ease-in;
 }
 .wr-img{
 	width: 100%;	
