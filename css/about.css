@@ -461,7 +461,7 @@ ul,ol,li,a,a:hover,a:focus,a:active,div{
 	position: relative;
 	z-index: 99;
 	padding: 30px 0;
-	padding-bottom: 50px
+	padding-bottom: 50px;
 	width: 90%;
 	margin: 0 auto;
 }
@@ -491,12 +491,51 @@ ul,ol,li,a,a:hover,a:focus,a:active,div{
 	display: block;
 	width: 100%;
 	height: 100%;
-	box-shadow: 2px 2px 1px #ddd;
+	box-shadow: 4px 4px 4px #ccc;
+	position: relative;
+	overflow: hidden;
 }
 .wr-img>img{
 	width: 100%;
+	-webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
 }
-.wr-content>ul>li p{
+.w-txt{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	padding: 10px;
+	box-sizing:border-box;
+	background: rgba(0,0,0,0.8);
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+	
+}
+.w-txt>h3{
+	margin-bottom: 4%;
+	margin-top: 2%;
+	font-size: 18px;
+	font-weight: normal;
+	text-align: center;
+}
+.w-txt>p{
+	line-height: 1.6;
+}
+/*.wr-content>ul>li p{
 	padding: 10px 0;
 	text-align: center;
 	color: #fff;
@@ -504,7 +543,7 @@ ul,ol,li,a,a:hover,a:focus,a:active,div{
 	background-repeat: repeat-x;
 	background-color: #fff;
 }
-.one{
+*/.one{
 	width: 100%;
 	border: 1px solid #ddd;
 	border-bottom: 0;
