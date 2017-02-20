@@ -20,8 +20,7 @@
 			<div class="me-pic">
 				<div class="me-wrap">
 					<img src="images/me-open.jpg" alt="">
-				</div>
-				
+				</div>			
 			</div>		
 			<h3>orca</h3>
 			<p class="me-txt">目前从事界面设计、交互设计、用户体验、前端开发及网页重构等相关工作</p>
@@ -50,6 +49,9 @@
 		      <div class="bar-main">
 		        <div class="nav-wrap">
 		          <nav>
+		          	<div class="small-nav">
+		          		<img src="images/nav.png" alt="">
+		          	</div>
 		          	<span class="head-me"><img src="images/me.png" alt=""></span>
 		            <ul>
 		              <li><a href="#home">首页</a></li>
@@ -60,7 +62,6 @@
 		              <li><a href="/">博客</a></li>
 		              <li><a href="#contact">联系</a></li>
 		            </ul>
-
 		          </nav>
 
 		        </div>
@@ -276,6 +277,7 @@
 	</div>
 	<script>
 		$(function(){
+			var change = true;
 			var bigEvent =[{
 			'year' : 2015,
 			'events' :[
@@ -352,11 +354,25 @@
 			    c=$(window).height();
 			    if(b+c>a){
 			        $('.co-content>ul>li').addClass('scroll');
-			        }
+			    }
 			    if(b+c>wr + 400){
 			         $('.wr-content>ul>li').addClass('fade');
-			        }
-			    }) 
+			    }
+		    }) 
+		    // 手机导航
+		    $('.small-nav').click(function(event) {
+		    	/* Act on the event */		    	
+		    	$('.nav-wrap>nav>ul').slideToggle(1000,function(){
+		    		if (change) {
+		    			$('.small-nav').css('background', '#2b2b2b');
+		    			change = false;
+		    		} else {
+		    			$('.small-nav').css('background', '#000');
+		    			change = true;
+		    		}
+		    	});
+		    	
+		    });
 		});
 			
 

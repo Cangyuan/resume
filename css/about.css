@@ -215,6 +215,7 @@ ul,ol,li,a,a:hover,a:focus,a:active,div{
 	padding-left: 6px
 }
 .top-title>span{
+	display: inline-block;
 	font-size: 12px;
 	color: #ccc;
 	letter-spacing: 1px;
@@ -227,13 +228,16 @@ ul,ol,li,a,a:hover,a:focus,a:active,div{
 .nav-wrap{
 	width: 100%;
 	height: 32px;
-	position: relative;
-	overflow: hidden;
+	/*position: relative;*/
+	/*overflow: hidden;*/
 }
 .nav-wrap>nav{
 	width: 100%;
 	height: 100%;
 	float: right;
+}
+.small-nav{
+	display: none;
 }
 .head-me{
 	float: right;
@@ -751,6 +755,9 @@ footer{
 	.se-title>span{
 		width: 20%;
 	}
+	.top-title>span{
+		display: none;
+	}
 	.ab-content>p{		
 		padding: 0;
 	}
@@ -775,6 +782,9 @@ footer{
 		flex-flow: row wrap;
 		align-content: flex-start;
 	}
+	/*.show{
+		
+	}*/
 	.wr-content>ul>li,.co-content>ul>li{
 		flex: 0 0 50%;
 		padding: 3%;
@@ -785,5 +795,30 @@ footer{
 	}
 	.w-txt>h3{
 		font-size: .8rem;
+	}
+	.nav-wrap>nav>ul{
+		position: absolute;
+	    top: 37px;
+	    right: 0;
+	    width: 100px;
+	    z-index: 999;
+	    background: #111;
+	    display: none;
+	}
+	.nav-wrap>nav>ul>li{
+		display: block;
+		text-align: center;
+	}
+	.small-nav{
+		display: block;
+		height: 100%;
+		float: right;
+		margin-left: 4px;
+	}
+	.small-nav>img{
+		display: block;
+		height: 100%;
+		padding: 6px;
+		box-sizing: border-box;
 	}
 }
