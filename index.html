@@ -18,9 +18,13 @@
 	.left{
 		float: left;
 		width: 40%;
-		background: #009688;
+		/*background: #009688;*/
+		background: #00b8a5;
 	}
-
+	.r-info p{
+		color: #6e6e6e;
+		line-height: 1.8;
+	}
 	.right{
 		float: right;
 		width: 60%;
@@ -139,9 +143,9 @@
 	.l-bg{
 		position: absolute;
 		left: -200px;
-		top: 400px;
+		top: 600px;
 		width: 200%;
-		height: 200px;
+		height: 300px;
 		background: rgba(255,255,255,.4);
 		transform: rotate(30deg);
 	}
@@ -154,6 +158,7 @@
 		font-size: 20px;
 		font-weight: 600;
 		color: #4f4f4f;
+		margin-top: 20px;
 	}
 	.r-base>h4>img{
 		width: 24px!important;
@@ -163,13 +168,105 @@
 	}
 	.me-link{
 		position: absolute;
-		top: 20px;
+		top: 48px;
 		right: 30px;
+		color: #006157;
+		font-size: 12px;
+		font-weight: 600;
+	}
+	.me-link>a{
+		color: #006157;
+		font-weight: 500;
+		font-family: cursive;
+		text-decoration: underline;
 	}
 	.p-main>h4{
-		color: #009688!important;
-		line-height: 30px;
+		color: #00b8a5!important;
+		line-height: 36px;
 		font-weight: 600;
+		font-size: 18px;
+		margin-top: 6px;
+	}
+	.p-main>h4 i{
+		font-weight: 600;
+		color: #795548;
+		padding-left: 6px;
+	}
+	.p-skill{
+		height: 40px;
+		line-height: 40px;
+		position: relative;
+		margin: 4px 0;
+	}
+	.p-skill:before{
+		position: absolute;
+		display: block;
+		content: '';
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		width: 80%;
+		height: 10px;
+		background: #8a8a8a;
+	}
+	.p-main:nth-of-type(3) .p-skill:before{
+		width: 56%;
+	}
+	.p-main:nth-of-type(4) .p-skill:before{
+		width: 42%;
+	}
+	.p-skill>span{
+		position: relative;
+		z-index: 999;
+		background: #00b8a5;
+		font-family: cursive;
+		/*display: inline-block;*/
+		padding: 4px 6px;
+		margin-right: 6px;
+		color: #f2f2f2;
+	}
+	.foot{
+		 
+	}
+	.foot>li>h4{
+		color:#00b8a5;
+		font-weight: 600;
+		line-height: 27px;
+		margin-top: 10px;
+		font-size: 18px;
+	}
+	.foot>li>h4>span{
+		color: #6e6e6e;
+		padding-left: 20px;
+		font-size: 14px;
+	}
+	.foot>li>h4+p{
+		color: #006157; 
+		font-weight: 600;
+		font-size: 12px;
+	}
+	.p-detail{
+		color: #6e6e6e;
+		letter-spacing: 1px;
+		font-size: 14px;
+		margin-top: 4px;
+	}
+	.education>li{
+		line-height: 27px;
+		color: #6e6e6e;
+		letter-spacing: 1px;
+		font-size: 14px;
+	}
+	.education>li>span{
+		color: #006157; 
+		font-weight: 600;
+		font-size: 12px;
+		padding-right: 8px;
+	}
+	.education>li>strong{
+		font-weight: 600;
+		color:#00b8a5;
+		margin-right: 20px;
 		font-size: 18px;
 	}
 </style>
@@ -223,44 +320,60 @@
 	</div>
 </div>
 <div class="right r-info">
-	<div class="me-link">在线简历：<a href="http://orca.website/me">orca.website/about/</a></div>
+	<div class="me-link">在线简历：<a href="http://orca.website/me" target="_blank">orca.website/about/</a></div>
 	<div class="r-base">
 		<h4><img style="float: left;" src="images/pro.png" alt="">项目展示</h4>
 		<div class="r-pro">
 			<div class="p-main">
-				<h4>广东辰宜信息科技有限公司官网<a href="http://www.gdchenyi.com.cn/">链接</a></h4>
+				<h4>广东辰宜信息科技有限公司官网<a href="http://www.gdchenyi.com.cn/" target="_blank"><i class="fa fa-paperclip fa-rotate-90"></i></a></h4>
+				<div class="p-skill">
+					<span>Anguar</span><span>jqurey</span><span>font-swesome</span><span>ui-router</span>
+				</div>
 				<p>基于Anguar开发网站，运用到jqurey、font-swesome、ui-router、bootstrap等技术</p>
 			</div>
 			<div class="p-main">
 				<h4>南海区一窗通办自动填表系统</h4>
-
+				<div class="p-skill">
+					<span>Anguar</span><span>jqurey</span><span>bootstrap</span><span>font-swesome</span><span>ui-router</span>
+				</div>
 				<p>制作原型和项目的前端开发工作，基于Anguar开发网站，运用到jqurey、font-swesome、ui-router、bootstrap等技术</p>
 			</div>
 			<div class="p-main">
-				<h4>axure rp作品 佛山市中小企业公共服务平台<a href="http://www.gdchenyi.com.cn/">链接</a></h4>
+				<h4>github博客项目<a href="http://orca.website/" target="_blank"><i class="fa fa-paperclip fa-rotate-90"></i></a></h4>
+				<div class="p-skill">
+					<span>jquery</span><span>jekyll</span><span>git</span><span>font swesome</span>
+				</div>
+				<p>自搭博客系统</p>
+			</div>
+			<div class="p-main">
+				<h4>axure rp作品 佛山市中小企业公共服务平台<a href="axure-rp/首页.html" target="_blank"><i class="fa fa-paperclip fa-rotate-90"></i></a></h4>
+				<div class="p-skill">
+					<span>axure rp</span><span>photoshop</span>
+				</div>
+				<p>axure rp设计原型页面</p>
 			</div>
 		</div>
 		<h4><img style="float: left;" src="images/cross.png" alt="">个人履历</h4>
-		<ul>
+		<ul class="foot">
 			<li>
-				<h4>广东辰宜信息科技有限公司 <span>web前端开发工程师</span></h4>
+				<h4>广东辰宜信息科技有限公司 <span>——web前端开发工程师</span></h4>
 				<p>2016.3~至今</p>
-				<p class="detail">
+				<p class="p-detail">
 					负责项目的原型制作和前端页面的设计、编写以及维护工作，例如完成南海区一窗通办填表系统原型以及其前端页面的开发和维护工作、公司官网的PC以及手机端页面独立制作（新闻版块后台交互后端人员协助完成）、佛山市中小企业公共服务平台的原型制作等
 				</p>
 			</li>
 			<li>
-				<h4>佛山市亿动网络有限公司<span>页面工程师</span></h4>
+				<h4>佛山市亿动网络有限公司<span>——页面工程师</span></h4>
 				<p>2015年2月~2016年3月</p>
-				<p class="detail">
+				<p class="p-detail">
 					产品部工作，负责网站测试以及建站工作，配合后端维护，指导客户建站的顺利进行，做前端页面的开发工作
 				</p>
 			</li>
 		</ul>
 		<h4><img style="float: left;" src="images/edu.png" alt="">教育背景</h4>
-		<ul>
-			<li><span>2014~2017</span>新乡医学院工作中自读本科</li>
-			<li><span>2008~2011</span>漯河医学高等专科学校</li>
+		<ul class="education">
+			<li><span>2014.1~2017.1</span><strong>新乡医学院</strong>工作中自读本科</li>
+			<li><span>2008.9~2011.6</span><strong>漯河医学高等专科学校</strong></li>
 		</ul>
 	</div>
 </div>
