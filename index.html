@@ -15,6 +15,14 @@
 	<title>逆戟</title>
 </head>
 <style>
+	*{
+		font-family: "黑体";
+		font-size: 12px;
+	}
+	p,li{
+		font-family: "黑体";
+		font-size: 12px;
+	}
 	.left{
 		float: left;
 		width: 40%;
@@ -24,6 +32,8 @@
 	.r-info p{
 		color: #6e6e6e;
 		line-height: 1.8;
+		font-size: 12px;
+		font-family: "黑体";
 	}
 	.right{
 		float: right;
@@ -36,6 +46,7 @@
 	}
 	.me-jpg{
 		text-align: center;
+	    margin-bottom: 20px;
 	}
 	.me-jpg>img{
 		width: 80%;
@@ -46,7 +57,7 @@
 	.l-link{
 		color: #fff;
 		padding: 0 20px;
-		margin-top: 148px;
+		margin-top: 143px;
 		margin-bottom: 30px;
 	}
 	.l-link>h4{
@@ -105,7 +116,7 @@
 	progress::-webkit-progress-value  { background: #004740; } 
 	.me-jpg>p{
 		color: #004740;
-		line-height: 27px;
+		line-height: 1.6;
 	}
 	.base{
 		padding: 2% 4%;
@@ -123,8 +134,7 @@
 		margin-top: 10px;
 	}
 	.skill>ul>li{
-		line-height: 30px;
-		height: 30px;
+		height: 26px;
 		position: relative;
 	}
 	.skill>ul>li>span{
@@ -139,6 +149,8 @@
 		text-align: right;
 		padding-right: 4px;
 		text-transform:capitalize;
+		font-size: 12px;
+		font-family: cursive;
 	}
 	.l-bg{
 		position: absolute;
@@ -209,11 +221,14 @@
 		height: 10px;
 		background: #8a8a8a;
 	}
+	.p-main:nth-of-type(1) .p-skill:before{
+		width: 70%;
+	}
 	.p-main:nth-of-type(3) .p-skill:before{
 		width: 56%;
 	}
-	.p-main:nth-of-type(4) .p-skill:before{
-		width: 42%;
+	.p-main:nth-of-type(5) .p-skill:before{
+		width: 36%;
 	}
 	.p-skill>span{
 		position: relative;
@@ -247,15 +262,15 @@
 	}
 	.p-detail{
 		color: #6e6e6e;
-		letter-spacing: 1px;
+		/*letter-spacing: 1px;*/
 		font-size: 14px;
 		margin-top: 4px;
 	}
 	.education>li{
 		line-height: 27px;
 		color: #6e6e6e;
-		letter-spacing: 1px;
-		font-size: 14px;
+		/*letter-spacing: 1px;
+		font-size: 14px;*/
 	}
 	.education>li>span{
 		color: #006157; 
@@ -269,6 +284,9 @@
 		margin-right: 20px;
 		font-size: 18px;
 	}
+	.foot>li>h4+p,.education>li>span{
+		font-family: "微软雅黑";
+	}
 </style>
 <body class="">
 <div class="main">
@@ -278,15 +296,15 @@
 		<img src="images/me-open.jpg" alt="">
 		<h4 style="color: #fff;font-size: 24px;font-weight: 600;border-bottom: 2px solid #004740;padding-bottom: 20px;letter-spacing: 1px;margin-bottom: 6px;text-shadow: 4px 2px 0 #007a6e;">杨晓丹</h4>
 		<p>一腔热血的激情</p>
-		<p>满怀信念的创新</p>
-		<p>专注前端的开发</p>
+		<p>满怀信念去创新</p>
+		<p>专注前端开发</p>
 		<div class="job">Web前端开发工程师</div>
 	</div>
 	<div class="skill">
 		<ul>
-			<li><span>html</span><progress value="86" max="100">
+			<li><span>html</span><progress value="82" max="100">
 			</progress></li>
-			<li><span>css</span><progress value="78" max="100">
+			<li><span>css</span><progress value="80" max="100">
 			</progress></li>
 			<li><span>javascript</span><progress value="74" max="100">
 			</progress></li>			
@@ -294,19 +312,23 @@
 			</progress></li>
 			<li><span>bootstrap</span><progress value="76" max="100">
 			</progress></li>
-			<li><span>angular</span><progress value="72" max="100">
+			<li><span>angular</span><progress value="70" max="100">
 			</progress></li>
 			<li><span>font awesome</span><progress value="68" max="100">
+			</progress></li>			
+			<li><span>git</span><progress value="70" max="100">
 			</progress></li>
 			<li><span>node</span><progress value="60" max="100">
 			</progress></li>
+			<li><span>express</span><progress value="54" max="100">
+			</progress></li>
 			<li><span>axure rp</span><progress value="80" max="100">
 			</progress></li>
-			<li><span>photoshop</span><progress value="70" max="100">
-			</progress></li>
-			<li><span>git</span><progress value="60" max="100">
+			<li><span>photoshop</span><progress value="62" max="100">
 			</progress></li>
 		</ul>
+		<p style="color: #004740;line-height: 1.6;">我是一个充满热情、创意丰富、善于发现与解
+决问题的前端工程师。 </p>
 	</div>
 	<div class="l-link">
 		<!-- <h4>基本信息</h4> -->
@@ -320,7 +342,7 @@
 	</div>
 </div>
 <div class="right r-info">
-	<div class="me-link">在线简历：<a href="http://orca.website/me" target="_blank">orca.website/about/</a></div>
+	<div class="me-link">在线简历：<a href="http://orca.website/me" target="_blank">orca.website/me/</a></div>
 	<div class="r-base">
 		<h4><img style="float: left;" src="images/pro.png" alt="">项目展示</h4>
 		<div class="r-pro">
@@ -329,28 +351,35 @@
 				<div class="p-skill">
 					<span>Anguar</span><span>jqurey</span><span>font-swesome</span><span>ui-router</span>
 				</div>
-				<p>基于Anguar开发网站，运用到jqurey、font-swesome、ui-router、bootstrap等技术</p>
+				<p>运用响应式布局做公司官网，负责前端架构设计以及前端页面的开发工作</p>
 			</div>
 			<div class="p-main">
 				<h4>南海区一窗通办自动填表系统</h4>
 				<div class="p-skill">
 					<span>Anguar</span><span>jqurey</span><span>bootstrap</span><span>font-swesome</span><span>ui-router</span>
 				</div>
-				<p>制作原型和项目的前端开发工作，基于Anguar开发网站，运用到jqurey、font-swesome、ui-router、bootstrap等技术</p>
+				<p>依据客户需求设计制作原型，以及完成项目的前端页面的开发工作</p>
 			</div>
 			<div class="p-main">
 				<h4>github博客项目<a href="http://orca.website/" target="_blank"><i class="fa fa-paperclip fa-rotate-90"></i></a></h4>
 				<div class="p-skill">
 					<span>jquery</span><span>jekyll</span><span>git</span><span>font swesome</span>
 				</div>
-				<p>自搭博客系统</p>
+				<p>运用github的博客系统，搭建个人博客，记录学习过程</p>
+			</div>
+			<div class="p-main">
+				<h4>自制绮罗生平台<a href="http://orca.website/spare" target="_blank"><i class="fa fa-paperclip fa-rotate-90"></i></a></h4>
+				<div class="p-skill">
+					<span>Anguar</span><span>jqurey</span><span>git</span><span>font-swesome</span><span>ui-router</span>
+				</div>
+				<p>基于angular搭建github项目</p>
 			</div>
 			<div class="p-main">
 				<h4>axure rp作品 佛山市中小企业公共服务平台<a href="axure-rp/首页.html" target="_blank"><i class="fa fa-paperclip fa-rotate-90"></i></a></h4>
 				<div class="p-skill">
 					<span>axure rp</span><span>photoshop</span>
 				</div>
-				<p>axure rp设计原型页面</p>
+				<p>运用axure rp设计原型页面</p>
 			</div>
 		</div>
 		<h4><img style="float: left;" src="images/cross.png" alt="">个人履历</h4>
@@ -372,7 +401,7 @@
 		</ul>
 		<h4><img style="float: left;" src="images/edu.png" alt="">教育背景</h4>
 		<ul class="education">
-			<li><span>2014.1~2017.1</span><strong>新乡医学院</strong>工作中自读本科</li>
+			<li><span>2014.1~2017.1</span><strong>新乡医学院</strong>成人本科</li>
 			<li><span>2008.9~2011.6</span><strong>漯河医学高等专科学校</strong></li>
 		</ul>
 	</div>
