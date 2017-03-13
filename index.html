@@ -28,6 +28,7 @@
 	.r-info{
 		box-sizing:border-box;
 		padding: 2% 4%;
+		position: relative;
 	}
 	.me-jpg{
 		text-align: center;
@@ -148,7 +149,28 @@
 		overflow: hidden;
 	}
 	.r-base>h4{
-		background: url(images/pro.png) no-repeat;
+		/*background: url(images/pro.png) no-repeat;*/
+		line-height: 40px;
+		font-size: 20px;
+		font-weight: 600;
+		color: #4f4f4f;
+	}
+	.r-base>h4>img{
+		width: 24px!important;
+		position: relative;
+		top: 8px;
+		margin-right: 4px;
+	}
+	.me-link{
+		position: absolute;
+		top: 20px;
+		right: 30px;
+	}
+	.p-main>h4{
+		color: #009688!important;
+		line-height: 30px;
+		font-weight: 600;
+		font-size: 18px;
 	}
 </style>
 <body class="">
@@ -201,10 +223,44 @@
 	</div>
 </div>
 <div class="right r-info">
+	<div class="me-link">在线简历：<a href="http://orca.website/me">orca.website/about/</a></div>
 	<div class="r-base">
-		<h4>项目展示</h4>
+		<h4><img style="float: left;" src="images/pro.png" alt="">项目展示</h4>
+		<div class="r-pro">
+			<div class="p-main">
+				<h4>广东辰宜信息科技有限公司官网<a href="http://www.gdchenyi.com.cn/">链接</a></h4>
+				<p>基于Anguar开发网站，运用到jqurey、font-swesome、ui-router、bootstrap等技术</p>
+			</div>
+			<div class="p-main">
+				<h4>南海区一窗通办自动填表系统</h4>
+
+				<p>制作原型和项目的前端开发工作，基于Anguar开发网站，运用到jqurey、font-swesome、ui-router、bootstrap等技术</p>
+			</div>
+			<div class="p-main">
+				<h4>axure rp作品 佛山市中小企业公共服务平台<a href="http://www.gdchenyi.com.cn/">链接</a></h4>
+			</div>
+		</div>
+		<h4><img style="float: left;" src="images/cross.png" alt="">个人履历</h4>
 		<ul>
-			<li><i></i></li>
+			<li>
+				<h4>广东辰宜信息科技有限公司 <span>web前端开发工程师</span></h4>
+				<p>2016.3~至今</p>
+				<p class="detail">
+					负责项目的原型制作和前端页面的设计、编写以及维护工作，例如完成南海区一窗通办填表系统原型以及其前端页面的开发和维护工作、公司官网的PC以及手机端页面独立制作（新闻版块后台交互后端人员协助完成）、佛山市中小企业公共服务平台的原型制作等
+				</p>
+			</li>
+			<li>
+				<h4>佛山市亿动网络有限公司<span>页面工程师</span></h4>
+				<p>2015年2月~2016年3月</p>
+				<p class="detail">
+					产品部工作，负责网站测试以及建站工作，配合后端维护，指导客户建站的顺利进行，做前端页面的开发工作
+				</p>
+			</li>
+		</ul>
+		<h4><img style="float: left;" src="images/edu.png" alt="">教育背景</h4>
+		<ul>
+			<li><span>2014~2017</span>新乡医学院工作中自读本科</li>
+			<li><span>2008~2011</span>漯河医学高等专科学校</li>
 		</ul>
 	</div>
 </div>
