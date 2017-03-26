@@ -29,7 +29,7 @@
 		/*background: #009688;*/
 		background: #00b8a5;
 	}
-	.r-info p{
+	.r-info p,.r-pro table tr td{
 		color: #6e6e6e;
 		line-height: 1.8;
 		font-size: 12px;
@@ -46,7 +46,7 @@
 	}
 	.me-jpg{
 		text-align: center;
-	    margin-bottom: 20px;
+	    margin-bottom: 31px;
 	}
 	.me-jpg>img{
 		width: 80%;
@@ -127,7 +127,7 @@
 		font-size: 24px;
 		font-weight: 600;
 		padding: 10px 0;
-		border-bottom: 1px solid #004740;
+		/*border-bottom: 1px solid #004740;*/
 		text-shadow: 2px 2px 4px #d5c2c4;
 	}
 	.skill{
@@ -269,8 +269,6 @@
 	.education>li{
 		line-height: 27px;
 		color: #6e6e6e;
-		/*letter-spacing: 1px;
-		font-size: 14px;*/
 	}
 	.education>li>span{
 		color: #006157; 
@@ -281,11 +279,20 @@
 	.education>li>strong{
 		font-weight: 600;
 		color:#00b8a5;
-		margin-right: 20px;
+		margin-right: 6px;
 		font-size: 18px;
 	}
 	.foot>li>h4+p,.education>li>span{
 		font-family: "微软雅黑";
+	}
+	table{
+		margin-top: 10px;
+	}
+	.name{
+		font-size: 16px!important;
+		color: #00b8a5!important;
+		width: 60px;
+		font-weight: 600;
 	}
 </style>
 <body class="">
@@ -294,12 +301,14 @@
 <div class="left base">
 	<div class="me-jpg">
 		<img src="images/me-open.jpg" alt="">
-		<h4 style="color: #fff;font-size: 24px;font-weight: 600;border-bottom: 2px solid #004740;padding-bottom: 20px;letter-spacing: 1px;margin-bottom: 6px;text-shadow: 4px 2px 0 #007a6e;">杨晓丹</h4>
-		<p>一腔热血的激情</p>
-		<p>满怀信念去创新</p>
-		<p>专注前端开发</p>
-		<div class="job">Web前端开发工程师</div>
+		<h4 style="color: #fff;font-size: 24px;font-weight: 600;border-bottom: 2px solid #004740;padding-bottom: 20px;letter-spacing: 1px;margin-bottom: 10px;text-shadow: 4px 2px 0 #007a6e;">杨晓丹</h4>
+		<div class="job"><!-- <span>应聘岗位：</span> -->前端开发工程师</div>
+		<p>Web前端的学习要持之以恒，知识深度与广度都很重要。希望在在工作中磨练自己的技能，深化自己的学习，攫取新知识，为贵公司做出贡献！</p>
+		<!-- <p>满怀信念去创新</p>
+		<p>专注前端开发</p> -->
+		
 	</div>
+	
 	<div class="skill">
 		<ul>
 			<li><span>html</span><progress value="82" max="100">
@@ -327,14 +336,14 @@
 			<li><span>photoshop</span><progress value="62" max="100">
 			</progress></li>
 		</ul>
-		<p style="color: #004740;line-height: 1.6;">我是一个充满热情、创意丰富、善于发现与解
-决问题的前端工程师。 </p>
+		<!-- <p style="color: #004740;line-height: 1.6;">我是一个充满热情、创意丰富、善于发现与解
+决问题的前端工程师。 </p> -->
 	</div>
 	<div class="l-link">
-		<!-- <h4>基本信息</h4> -->
+		<h4>联系方式：</h4>
 		<ul>
 			<li><span><i class="fa fa-phone fa-fw"></i></span>15112910126</li>
-			<li><span><i class="fa fa-envelope fa-fw"></span></i><a href="mailto:1339918746@qq.com" target="_blank">1339918746@qq.com</a></li>
+			<li><span><i class="fa fa-envelope fa-fw"></i></span><a href="mailto:1339918746@qq.com" target="_blank">1339918746@qq.com</a></li>
 			<li><span><i class="fa fa-home fa-fw"></i></span><a href="http://orca.website" target="_blank">orca.website</a></li>
 			<li><span><i class="fa fa-github fa-fw"></i></span><a href="https://github.com/Cangyuan" target="_blank">github.com/Cangyuan</a></li>
 			<li><span><i class="fa fa-linkedin fa-fw"></i></span><a href="https://www.linkedin.com/in/Orca2017/" target="_blank">linkedin.com/in/orca2017</a></li>
@@ -344,6 +353,17 @@
 <div class="right r-info">
 	<div class="me-link">在线简历：<a href="http://orca.website/me" target="_blank">orca.website/me/</a></div>
 	<div class="r-base">
+		<h4><img style="float: left;" src="images/base.png" alt="">基本信息</h4>
+		<div class="r-pro">
+			<table>
+				<tr>
+					<td class="name">杨晓丹</td>
+					<td>29岁 / 女 / 新乡医学院 / 本科 / 2年工作经验 </td>
+					<td></td>
+					<td></td>					
+				</tr>
+			</table>
+		</div>
 		<h4><img style="float: left;" src="images/pro.png" alt="">项目展示</h4>
 		<div class="r-pro">
 			<div class="p-main">
@@ -351,36 +371,23 @@
 				<div class="p-skill">
 					<span>Anguar</span><span>jqurey</span><span>font-swesome</span><span>ui-router</span>
 				</div>
-				<p>运用响应式布局做公司官网，负责前端架构设计以及前端页面的开发工作</p>
+				<p>运用响应式布局做公司官网，负责前端架构设计以及前端页面的开发和维护工作</p>
 			</div>
 			<div class="p-main">
 				<h4>南海区一窗通办自动填表系统</h4>
 				<div class="p-skill">
 					<span>Anguar</span><span>jqurey</span><span>bootstrap</span><span>font-swesome</span><span>ui-router</span>
 				</div>
-				<p>依据客户需求设计制作原型，以及完成项目的前端页面的开发工作</p>
+				<p>用Axure设计制作原型，框架的制定用angularJs、jqurey及bootstrap前端流行框架，参与网页设计以及前端页面的编写工作
+</p>
 			</div>
-			<div class="p-main">
+			<!-- <div class="p-main">
 				<h4>github博客项目<a href="http://orca.website/" target="_blank"><i class="fa fa-paperclip fa-rotate-90"></i></a></h4>
 				<div class="p-skill">
 					<span>jquery</span><span>jekyll</span><span>git</span><span>font swesome</span>
 				</div>
 				<p>运用github的博客系统，搭建个人博客，记录学习过程</p>
-			</div>
-			<div class="p-main">
-				<h4>自制绮罗生平台<a href="http://orca.website/spare" target="_blank"><i class="fa fa-paperclip fa-rotate-90"></i></a></h4>
-				<div class="p-skill">
-					<span>Anguar</span><span>jqurey</span><span>git</span><span>font-swesome</span><span>ui-router</span>
-				</div>
-				<p>基于angular搭建github项目</p>
-			</div>
-			<div class="p-main">
-				<h4>axure rp作品 佛山市中小企业公共服务平台<a href="axure-rp/首页.html" target="_blank"><i class="fa fa-paperclip fa-rotate-90"></i></a></h4>
-				<div class="p-skill">
-					<span>axure rp</span><span>photoshop</span>
-				</div>
-				<p>运用axure rp设计原型页面</p>
-			</div>
+			</div> -->
 		</div>
 		<h4><img style="float: left;" src="images/cross.png" alt="">个人履历</h4>
 		<ul class="foot">
@@ -399,114 +406,30 @@
 				</p>
 			</li>
 		</ul>
-		<h4><img style="float: left;" src="images/edu.png" alt="">教育背景</h4>
+		<h4><img style="float: left;" src="images/hi-in icon.png" alt="">自我描述</h4>
 		<ul class="education">
-			<li><span>2014.1~2017.1</span><strong>新乡医学院</strong>成人本科</li>
-			<li><span>2008.9~2011.6</span><strong>漯河医学高等专科学校</strong></li>
+			<li>
+				<strong>*</strong>熟悉W3C标准，掌握HTML、CSS、JavaScript、mysql语言，理解AJAX运行机制，掌握JQuery、AngularJs、Bootstrap框架，能够熟练应用HTML/CSS/JavaScript技术，开发符合W3C标准的网站前端页面。
+			<!-- <span>2014.1~2017.1</span><strong>新乡医学院</strong>成人本科 --></li>
+			<!-- <li><span>2008.9~2011.6</span><strong>漯河医学高等专科学校</strong></li> -->
+			<li>
+				<strong>*</strong>具备软件开发能力，谋求贵公司的网页前端开发职位。
+			</li>
+			<li>
+				<strong>*</strong>本人热衷于网页设计，熟练Axure、Photoshop等设计软件，擅长运用Axure进行网页的排版和设计，熟练网页响应式设计，能很好地根据用户需求完成可用性、易用性、良好交互性和用户体验的网页。
+			</li>
+			<li>
+				<strong>*</strong>在业余自学的过程中，让我变得更有耐心，思维更活跃，同时也培养了我独立思考和自主学习的能力，在压力和困难面前我有很好的分析能力和解决问题的能力。我更是一个富有团队精神的人能够与同事相互协作，并充分的沟通。
+			</li>
 		</ul>
+		<!-- <p class="p-detail">
+			产品部工作，负责网站测试以及建站工作，配合后端维护，指导客户建站的顺利进行，做前端页面的开发工作
+		</p> -->
 	</div>
 </div>
 </div>
 <script>
-	// $(function(){
-	// 	var change = true;
-	// 	var bigEvent =[{
-	// 	'year' : 2015,
-	// 	'events' :[
-	// 	{
-	// 		'mouths' : 2,
-	// 		'times' :'2015年2月~2016年3月',
-	// 		'title':'佛山市亿动网络有限公司',
-	// 		'even' :'产品部工作，负责网站测试以及建站工作，配合后端维护，指导客户建站的顺利进行，做前端页面的开发工作'
-	// 	}]
-	// },{
-	// 	'year' : 2016,
-	// 	'events' :[
-	// 	{
-	// 		'mouths' : 3,
-	// 		'title':'广东辰宜信息科技有限公司',
-	// 		'times' :'2016年3月至今',
-	// 		'even' :'web前端开发工程师，负责网站的设计和开发工作'
-	// 	}]
-	// },{
-	// 	'year' : 2017,
-	// 	'events' :[
-	// 	{
-	// 		'mouths' : 3,
-	// 		'title':'广东辰宜信息科技有限公司',
-	// 		'times' :'2016年3月至今',
-	// 		'even' :'web前端开发工程师，负责网站的设计和开发工作'
-	// 	}
-	// 	]}];
-	// 	$('.event_wrap').eventFlow({'events':bigEvent});
-	// 	// open start
-	// 	$('.head-me').click(function(event) {
-	// 		/* Act on the event */
-	// 		$('.me-info').addClass('open-me');
-	// 		$('.wrap').addClass('remove');
-	// 		$('.main-bg').css('display', 'block');
-
-	// 	});
-
-	// 	// colse start
-	// 	function close(){
-	// 		$('.me-info').removeClass('open-me');
-	// 		$('.wrap').removeClass('remove');
-	// 		$('.main-bg').css('display', 'none');
-	// 	}
-	// 	$('.close').click(function(event) {
-	// 		/* Act on the event */
-	// 		close();
-	// 	});
-	// 	$('.de-close').click(function(event) {
-	// 		/* Act on the event */
-	// 		close();
-	// 	});
-	// 	$('.nav-wrap>nav>ul>li').first().find('a').addClass('navActive');
-	// 	$('.nav-wrap>nav>ul>li').click(function(event) {
-	// 		/* Act on the event */
-	// 		$('.nav-wrap>nav>ul>li>a').removeClass('navActive');
-	// 		$(this).find('a').addClass('navActive');
-	// 		close();
-	// 	});
-	// 	// 锚点跳转
-	// 	$('.nav-wrap>nav>ul>li>a').click(function(event) {
-	// 		/* Act on the event */
-	// 		var Id = $(this).attr('href');
-	// 		$("html,body").animate({scrollTop: $(Id).offset().top}, 1000);
-	// 	});	
-	// 	//滚动加载css3动画	
-	// 	$(window).scroll(function(){
-	// 	    var a,b,c,con,foot,wr;
-	// 	    con=$('.co-content').offset().top;
-	// 	    foot=$('#foot').offset().top;
-	// 	    wr=$('#writing').offset().top;
-	// 	    a=eval(con + 100);
-	// 	    b=$(window).scrollTop(); 
-	// 	    c=$(window).height();
-	// 	    if(b+c>a){
-	// 	        $('.co-content>ul>li').addClass('scroll');
-	// 	    }
-	// 	    if(b+c>wr + 400){
-	// 	         $('.wr-content>ul>li').addClass('fade');
-	// 	    }
-	//     }) 
-	//     // 手机导航
-	//     $('.small-nav').click(function(event) {
-	//     	/* Act on the event */		    	
-	//     	$('.nav-wrap>nav>ul').slideToggle(1000,function(){
-	//     		if (change) {
-	//     			$('.small-nav').css('background', '#2b2b2b');
-	//     			change = false;
-	//     		} else {
-	//     			$('.small-nav').css('background', '#000');
-	//     			change = true;
-	//     		}
-	//     	});
-	    	
-	//     });
-	// });
-		
+	
 
 </script>
 </body>
